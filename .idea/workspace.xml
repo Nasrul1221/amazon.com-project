@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="JS improved by adding products">
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="JS &quot;add to cart button&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon.html" beforeDir="false" afterPath="$PROJECT_DIR$/amazon.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/amazon.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/amazon.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +80,7 @@
       <updated>1740762438247</updated>
       <workItem from="1740762439404" duration="15430000" />
       <workItem from="1741008616466" duration="3490000" />
-      <workItem from="1741012150866" duration="7487000" />
+      <workItem from="1741012150866" duration="9027000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -105,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741016775636</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="JS &quot;add to cart button&quot;">
+      <option name="closed" value="true" />
+      <created>1741020078775</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741020078775</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +135,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="JS added" />
     <MESSAGE value="JS improved by adding products" />
-    <option name="LAST_COMMIT_MESSAGE" value="JS improved by adding products" />
+    <MESSAGE value="JS &quot;add to cart button&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS &quot;add to cart button&quot;" />
   </component>
 </project>

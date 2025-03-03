@@ -1,5 +1,6 @@
 let productsList = ''
 
+/* Products */
 products.forEach((product) => {
     productsList += `<div class="product-container">
         <div class="product-image-container">
@@ -54,7 +55,7 @@ products.forEach((product) => {
 
 document.querySelector('.js-products-grid').innerHTML = productsList;
 
-
+/* Add to Cart */
 const cart = [];
 document.querySelectorAll(".js-add-to-cart").forEach((button, index) => {
     button.addEventListener('click', () => {
@@ -80,6 +81,12 @@ document.querySelectorAll(".js-add-to-cart").forEach((button, index) => {
             });
         }
 
-        console.log(cart);
+        let cartTotal = 0;
+
+        cart.forEach((item) => {
+            cartTotal += item.quantity;
+        })
+
+        document.querySelector('.js-cart-total').innerHTML = cartTotal;
     })
 })
