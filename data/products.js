@@ -656,5 +656,21 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "hello-world",
+    image: "images/products/non-stick-cooking-set-15-pieces.webp",
+    name: "Non Stick Cooking Set, Pots, Pans and Utensils - 15 Pieces",
+    rating: {
+      stars: 4.0,
+      count: 1157
+    },
+    priceCents: 2000,
+    keywords: [
+      "cooking set",
+      "kitchen",
+      "cookware",
+      "pots",
+    ]
   }
 ];

@@ -16,7 +16,7 @@ products.forEach((product) => {
             <img class="product-rating-stars"
                  src="images/ratings/rating-${product.rating.stars * 10}.png"/>
             <div class="product-rating-count link-primary">
-                $${product.rating.count}
+                ${product.rating.count}
             </div>
         </div>
 
@@ -25,7 +25,7 @@ products.forEach((product) => {
         </div>
 
         <div class="product-quantity-container">
-            <select>
+            <select class="js-quantity-${product.id}">
                 <option selected value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -67,17 +67,19 @@ document.querySelectorAll(".js-add-to-cart").forEach((button, index) => {
         const productId = button.dataset.productId;
         let matchingItem;
         cart.forEach((item) => {
-            if (productId === item.productId) {
-                matchingItem = item;
-            }
+            if (productId === item.productId) matchingItem = item;
         })
+
+        let selectQuantity = document.querySelector(`.js-quantity-${productId}`).value;
+        console.log(selectQuantity);
+
         if (matchingItem) {
-            matchingItem.quantity++;
+            matchingItem.quantity = matchingItem.quantity + parseInt(selectQuantity);
         }
         else {
             cart.push({
-                productId: productId,
-                quantity: 1
+                productId,
+                quantity: parseInt(selectQuantity),
             });
         }
 
