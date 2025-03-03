@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Selector quantity works">
-      <change afterPath="$PROJECT_DIR$/data/cart.js" afterDir="false" />
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Module and timeout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amazon.html" beforeDir="false" afterPath="$PROJECT_DIR$/amazon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/amazon.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/amazon.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +82,7 @@
       <updated>1740762438247</updated>
       <workItem from="1740762439404" duration="15430000" />
       <workItem from="1741008616466" duration="3490000" />
-      <workItem from="1741012150866" duration="13827000" />
+      <workItem from="1741012150866" duration="15474000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -131,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741033025044</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Module and timeout">
+      <option name="closed" value="true" />
+      <created>1741035325297</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741035325297</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +164,7 @@
     <MESSAGE value="JS &quot;add to cart button&quot;" />
     <MESSAGE value="Was made the cart quantity interactive" />
     <MESSAGE value="Selector quantity works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Selector quantity works" />
+    <MESSAGE value="Module and timeout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module and timeout" />
   </component>
 </project>
