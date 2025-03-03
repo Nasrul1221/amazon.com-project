@@ -1,3 +1,5 @@
+import {cart} from '../data/cart.js';
+
 let productsList = ''
 
 /* Products */
@@ -56,22 +58,33 @@ products.forEach((product) => {
 document.querySelector('.js-products-grid').innerHTML = productsList;
 
 /* Add to Cart */
-const cart = [];
+const addedMessageTimeouts = {};
 document.querySelectorAll(".js-add-to-cart").forEach((button, index) => {
     button.addEventListener('click', () => {
-        document.querySelectorAll(".added-to-cart")[index].style.opacity = 1;
-        setTimeout(() => {
-            document.querySelectorAll(".added-to-cart")[index].style.opacity = 0;
-        }, 1000);
-
         const productId = button.dataset.productId;
+
+        // Show added message
+        const previousTimeoutId = addedMessageTimeouts[productId];
+
+        document.querySelectorAll(".added-to-cart")[index].style.opacity = 1;
+
+        if (previousTimeoutId) {
+            clearTimeout(previousTimeoutId);
+        }
+
+        const timeoutId = setTimeout(() => {
+            document.querySelectorAll(".added-to-cart")[index].style.opacity = 0;
+        }, 2000);
+        addedMessageTimeouts[productId] = timeoutId;
+
+
+        // Add to cart
         let matchingItem;
         cart.forEach((item) => {
             if (productId === item.productId) matchingItem = item;
         })
 
         let selectQuantity = document.querySelector(`.js-quantity-${productId}`).value;
-        console.log(selectQuantity);
 
         if (matchingItem) {
             matchingItem.quantity = matchingItem.quantity + parseInt(selectQuantity);
