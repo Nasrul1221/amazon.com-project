@@ -209,3 +209,23 @@
   margin-top: 11px;
   margin-bottom: 15px;
 }
+
+
+.product-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.update {
+  display: none;
+}
+
+.update input {
+  width: 25px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.hidden {
+  visibility: hidden;
+}

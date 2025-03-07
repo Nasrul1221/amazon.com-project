@@ -1,4 +1,8 @@
-export const cart = [];
+export let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+function saveToLocalStorage() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
 
 export function addToCart(productId) {
     let matchingItem;
@@ -9,7 +13,7 @@ export function addToCart(productId) {
     let selectQuantity = document.querySelector(`.js-quantity-${productId}`).value;
 
     if (matchingItem) {
-        matchingItem.quantity = matchingItem.quantity + parseInt(selectQuantity);
+        matchingItem.quantity += parseInt(selectQuantity);
     }
     else {
         cart.push({
@@ -17,4 +21,32 @@ export function addToCart(productId) {
             quantity: parseInt(selectQuantity),
         });
     }
+
+    saveToLocalStorage();
+}
+
+export function removeFromCart(productId) {
+    const newCart = [];
+    cart.forEach((item, index) => {
+        if (item.productId !== productId) {
+            newCart.push(item);
+        }
+    })
+
+    cart = newCart;
+
+
+    saveToLocalStorage();
+}
+
+export function updateQuantity(productId, newValue) {
+    cart.forEach((item) => {
+        if (productId === item.id) {
+            item.quantity = parseInt(newValue);
+        }
+    })
+    saveToLocalStorage();
+    console.log(cart);
+
+    document.querySelector('.quantity-label').innerHTML = newValue;
 }
