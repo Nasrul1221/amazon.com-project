@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Organising">
-      <change afterPath="$PROJECT_DIR$/scripts/checkout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/utils/money.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Checkout">
+      <change afterPath="$PROJECT_DIR$/data/deliveryOptions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amazon.html" beforeDir="false" afterPath="$PROJECT_DIR$/amazon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/amazon.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/amazon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/pages/amazon.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/amazon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/pages/checkout/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/checkout/checkout.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +52,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.checkout.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.checkout.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -101,7 +98,11 @@
       <workItem from="1741289664759" duration="3079000" />
       <workItem from="1741357256054" duration="3630000" />
       <workItem from="1741361287160" duration="613000" />
-      <workItem from="1741361913774" duration="8131000" />
+      <workItem from="1741361913774" duration="10247000" />
+      <workItem from="1741378823594" duration="1776000" />
+      <workItem from="1741539215333" duration="640000" />
+      <workItem from="1741621558605" duration="3389000" />
+      <workItem from="1741685830838" duration="4548000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -167,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741036824193</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Checkout">
+      <option name="closed" value="true" />
+      <created>1741370144151</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741370144151</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +202,7 @@
     <MESSAGE value="Selector quantity works" />
     <MESSAGE value="Module and timeout" />
     <MESSAGE value="Organising" />
-    <option name="LAST_COMMIT_MESSAGE" value="Organising" />
+    <MESSAGE value="Checkout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Checkout" />
   </component>
 </project>

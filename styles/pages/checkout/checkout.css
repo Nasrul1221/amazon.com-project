@@ -216,16 +216,13 @@
   align-items: center;
 }
 
-.update {
+.hidden {
   display: none;
 }
 
-.update input {
+.hidden input {
   width: 25px;
   text-align: center;
   margin-left: 5px;
 }
 
-.hidden {
-  visibility: hidden;
-}

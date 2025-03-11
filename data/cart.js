@@ -19,6 +19,7 @@ export function addToCart(productId) {
         cart.push({
             productId,
             quantity: parseInt(selectQuantity),
+            deliveryOptionId: '1',
         });
     }
 
@@ -41,12 +42,12 @@ export function removeFromCart(productId) {
 
 export function updateQuantity(productId, newValue) {
     cart.forEach((item) => {
-        if (productId === item.id) {
+        if (productId === item.productId) {
             item.quantity = parseInt(newValue);
         }
     })
     saveToLocalStorage();
     console.log(cart);
 
-    document.querySelector('.quantity-label').innerHTML = newValue;
+    document.querySelector(`.quantity-label-${productId}`).innerHTML = newValue;
 }
