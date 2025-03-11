@@ -47,7 +47,15 @@ export function updateQuantity(productId, newValue) {
         }
     })
     saveToLocalStorage();
-    console.log(cart);
 
     document.querySelector(`.quantity-label-${productId}`).innerHTML = newValue;
+}
+
+export function updateDeliveryOption(productId, deliveryOptionId) {
+    cart.forEach((item) => {
+        if (productId === item.productId) {
+            item.deliveryOptionId = deliveryOptionId;
+        }
+    })
+    saveToLocalStorage();
 }
