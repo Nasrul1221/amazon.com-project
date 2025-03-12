@@ -1,28 +1,18 @@
 import {cart, removeFromCart, updateQuantity, updateDeliveryOption} from '../../data/cart.js';
-import {products} from '../../data/products.js';
 import {formatCurrency} from "../utils/money.js";
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
-import { deliveryOptions } from '../../data/deliveryOptions.js';
+import { deliveryOptions, findDeliveryId } from '../../data/deliveryOptions.js';
 import { renderPayment } from './paymentSummary.js';
+import {findProduct} from "../utils/findProduct.js";
 
 export function renderOrder() {
     let cartList = '';
 
     cart.forEach((item) => {
-        let temp;
-        products.forEach((product) => {
-            if (item.productId === product.id) {
-                temp = product;
-            }
-        });
+        const temp = findProduct(item)
 
         const deliveryOptionId = item.deliveryOptionId;
-        let deliveryOption;
-        deliveryOptions.forEach((option) => {
-            if (option.id === deliveryOptionId) {
-                deliveryOption = option;
-            }
-        })
+        let deliveryOption = findDeliveryId(deliveryOptionId);
         const deliveryDate = dayjs().add(deliveryOption.days, 'day');
 
         cartList += `
@@ -72,7 +62,7 @@ export function renderOrder() {
 
         updateCheckoutTotal();
     });
-    document.querySelector('.order-summary').innerHTML = cartList;
+    document.querySelector('.js-order-summary').innerHTML = cartList;
 
     function deliveryOptionsHTML(temp, cartItem) {
         let html = '';
@@ -133,6 +123,7 @@ export function renderOrder() {
     document.querySelectorAll('.save-quantity-link').forEach((link, index) => {
         link.addEventListener('click', () => {
             handleInput(link);
+            renderPayment();
         });
     });
 
@@ -140,6 +131,7 @@ export function renderOrder() {
         link.addEventListener('keydown', (event) => {
             if (event.key === 'Enter') {
                 handleInput(link);
+                renderPayment();
             }
         });
     });
@@ -168,6 +160,7 @@ export function renderOrder() {
             const {productId, deliveryOptionId} = item.dataset;
             updateDeliveryOption(productId, deliveryOptionId);
             renderOrder();
+            renderPayment();
         })
     })
 }
