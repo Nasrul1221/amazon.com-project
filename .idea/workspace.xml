@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Some features">
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/MIT.LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/SpecRunner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/boot0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/boot1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/jasmine-html.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/jasmine.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/jasmine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/jasmine_favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/spec/PlayerSpec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/spec/SpecHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/src/Player.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/src/Song.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/moneyTest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tests.html" afterDir="false" />
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Add some tests and jasmine">
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/moneyTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests-jasmine/SpecRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests-jasmine/SpecRunner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests-jasmine/spec/PlayerSpec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests-jasmine/spec/SpecHelper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests-jasmine/src/Player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests-jasmine/src/Song.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -122,7 +114,7 @@
       <workItem from="1741805514411" duration="3516000" />
       <workItem from="1741863205508" duration="53000" />
       <workItem from="1741863485604" duration="50000" />
-      <workItem from="1741864567036" duration="10728000" />
+      <workItem from="1741864567036" duration="12495000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -236,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741892291336</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add some tests and jasmine">
+      <option name="closed" value="true" />
+      <created>1741896819202</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741896819202</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +268,7 @@
     <MESSAGE value="Organised the code" />
     <MESSAGE value="Finished an orderSummary part" />
     <MESSAGE value="Some features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some features" />
+    <MESSAGE value="Add some tests and jasmine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add some tests and jasmine" />
   </component>
 </project>
