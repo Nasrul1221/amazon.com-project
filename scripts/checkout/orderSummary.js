@@ -1,9 +1,11 @@
 import {cart, removeFromCart, updateQuantity, updateDeliveryOption} from '../../data/cart.js';
 import {formatCurrency} from "../utils/money.js";
-import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import { deliveryOptions, findDeliveryId } from '../../data/deliveryOptions.js';
 import { renderPayment } from './paymentSummary.js';
 import {findProduct} from "../utils/findProduct.js";
+import {updateCheckoutTotal} from "./checkoutHeader.js";
+import {calculateDeliveryDate} from "../utils/calculateDeliveryDate.js";
+import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 
 export function renderOrder() {
     let cartList = '';
@@ -11,9 +13,8 @@ export function renderOrder() {
     cart.forEach((item) => {
         const temp = findProduct(item)
 
-        const deliveryOptionId = item.deliveryOptionId;
-        let deliveryOption = findDeliveryId(deliveryOptionId);
-        const deliveryDate = dayjs().add(deliveryOption.days, 'day');
+        const deliveryOption = findDeliveryId(item.deliveryOptionId);
+        const deliveryDate = calculateDeliveryDate(deliveryOption);
 
         cartList += `
               <div class="cart-item-container js-${temp.id}">
@@ -40,7 +41,7 @@ export function renderOrder() {
                         Update
                       </span>
                       <div class="update-${temp.id} hidden">
-                        <input type="number" class="quantity-input-${temp.id}" min="1" max="10" value="1" oninput="validateInput(this)">
+                        <input type="number" class="quantity-input-${temp.id}" min="1" max="100" value="1" oninput="validateInput(this)">
                         <span class="save-quantity-link link-primary js-save-link" data-product-id="${temp.id}">Save</span>
                       </div>
                       <span class="delete-quantity-link link-primary js-delete-link" data-product-id="${temp.id}">
@@ -71,7 +72,7 @@ export function renderOrder() {
         deliveryOptions.forEach((item) => {
             const isChecked = item.id === cartItem.deliveryOptionId;
 
-            const deliveryDate = dayjs().add(item.days, 'day');
+            const deliveryDate = calculateDeliveryDate(item);
             const deliveryPrice = item.priceCents === 0 ? 'FREE Shipping' : `$${formatCurrency(item.priceCents)} - Shipping`;
 
             html += ` <div class="delivery-option">
@@ -91,21 +92,12 @@ export function renderOrder() {
         return html;
     }
 
-    function updateCheckoutTotal() {
-        let cartTotal = 0;
-        cart.forEach((item) => {
-            cartTotal += item.quantity;
-        })
-
-        document.querySelector('.js-amount-of-items').innerHTML = cartTotal;
-    }
-
     document.querySelectorAll('.js-delete-link').forEach((link, index) => {
         link.addEventListener('click', () => {
             const productId = link.getAttribute('data-product-id');
             removeFromCart(productId);
-            document.querySelector(`.js-${productId}`).remove();
 
+            renderOrder()
             updateCheckoutTotal();
             renderPayment();
         })
@@ -120,27 +112,12 @@ export function renderOrder() {
         });
     });
 
-    document.querySelectorAll('.save-quantity-link').forEach((link, index) => {
-        link.addEventListener('click', () => {
+    document.querySelectorAll('.save-quantity-link').forEach((link) => {
+        link.addEventListener('click', (event) => {
             handleInput(link);
             renderPayment();
         });
     });
-
-    document.querySelectorAll('.save-quantity-link').forEach((link, index) => {
-        link.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter') {
-                handleInput(link);
-                renderPayment();
-            }
-        });
-    });
-
-    function validateInput(input) {
-        if (parseInt(input.value) > parseInt(input.max)) {
-            input.value = input.max;
-        }
-    }
 
     function handleInput(link) {
         const productId = link.getAttribute('data-product-id');

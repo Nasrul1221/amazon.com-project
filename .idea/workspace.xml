@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/utils/findProduct.js" afterDir="false" />
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Finished an orderSummary part">
+      <change afterPath="$PROJECT_DIR$/scripts/checkout/checkoutHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/utils/calculateDeliveryDate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/deliveryOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/deliveryOptions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/checkout/paymentSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout/paymentSummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/utils/money.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/utils/money.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,10 @@
       <workItem from="1741685830838" duration="10518000" />
       <workItem from="1741725174273" duration="9000" />
       <workItem from="1741792540326" duration="8256000" />
-      <workItem from="1741805514411" duration="2674000" />
+      <workItem from="1741805514411" duration="3516000" />
+      <workItem from="1741863205508" duration="53000" />
+      <workItem from="1741863485604" duration="50000" />
+      <workItem from="1741864567036" duration="6791000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -207,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741794777867</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Finished an orderSummary part">
+      <option name="closed" value="true" />
+      <created>1741808389866</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741808389867</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +246,7 @@
     <MESSAGE value="Save data" />
     <MESSAGE value="Make delivery options interactive" />
     <MESSAGE value="Organised the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Organised the code" />
+    <MESSAGE value="Finished an orderSummary part" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished an orderSummary part" />
   </component>
 </project>
