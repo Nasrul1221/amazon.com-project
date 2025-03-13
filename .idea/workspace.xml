@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Finished an orderSummary part">
-      <change afterPath="$PROJECT_DIR$/scripts/checkout/checkoutHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/utils/calculateDeliveryDate.js" afterDir="false" />
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Some features">
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/MIT.LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/SpecRunner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/boot0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/boot1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/jasmine-html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/jasmine.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/jasmine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/lib/jasmine-5.1.1/jasmine_favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/spec/PlayerSpec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/spec/SpecHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/src/Player.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/src/Song.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/moneyTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,29 +59,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.checkout.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.cart.js.executor&quot;: &quot;Debug&quot;,
-    &quot;Node.js.checkout.js.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/amazon-project&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.checkout.html.executor": "Run",
+    "Node.js.cart.js.executor": "Debug",
+    "Node.js.checkout.js.executor": "Debug",
+    "Node.js.moneyTest.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/amazon-project",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\amazon-project\jasmine-standalone-5.1.1" />
       <recent name="D:\amazon-project\scripts\checkout" />
       <recent name="D:\amazon-project\scripts" />
     </key>
@@ -110,7 +122,7 @@
       <workItem from="1741805514411" duration="3516000" />
       <workItem from="1741863205508" duration="53000" />
       <workItem from="1741863485604" duration="50000" />
-      <workItem from="1741864567036" duration="6791000" />
+      <workItem from="1741864567036" duration="10728000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -216,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741808389867</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Some features">
+      <option name="closed" value="true" />
+      <created>1741892291336</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741892291336</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +267,7 @@
     <MESSAGE value="Make delivery options interactive" />
     <MESSAGE value="Organised the code" />
     <MESSAGE value="Finished an orderSummary part" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished an orderSummary part" />
+    <MESSAGE value="Some features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some features" />
   </component>
 </project>
