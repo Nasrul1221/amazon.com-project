@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Add some tests and jasmine">
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/moneyTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/data/addToCartTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests-jasmine/SpecRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests-jasmine/SpecRunner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests-jasmine/spec/PlayerSpec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests-jasmine/spec/SpecHelper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests-jasmine/src/Player.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests-jasmine/src/Song.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests-jasmine/moneyTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests-jasmine/utils/moneyTest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,30 +49,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.checkout.html.executor": "Run",
-    "Node.js.cart.js.executor": "Debug",
-    "Node.js.checkout.js.executor": "Debug",
-    "Node.js.moneyTest.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/amazon-project",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.checkout.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.cart.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.checkout.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.moneyTest.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/amazon-project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\amazon-project\tests-jasmine\utils" />
       <recent name="D:\amazon-project\jasmine-standalone-5.1.1" />
       <recent name="D:\amazon-project\scripts\checkout" />
       <recent name="D:\amazon-project\scripts" />
@@ -115,6 +114,10 @@
       <workItem from="1741863205508" duration="53000" />
       <workItem from="1741863485604" duration="50000" />
       <workItem from="1741864567036" duration="12495000" />
+      <workItem from="1741972768303" duration="3149000" />
+      <workItem from="1742117136275" duration="10000" />
+      <workItem from="1742233846518" duration="2376000" />
+      <workItem from="1742240150013" duration="807000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
