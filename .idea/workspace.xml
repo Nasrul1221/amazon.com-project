@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Some tests. However, I have some obstacles, I will fix it later">
-      <change afterPath="$PROJECT_DIR$/data/cart-oop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/checkout/orderSummaryTest.js" afterDir="false" />
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Add OOP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/amazon.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/amazon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests-jasmine/SpecRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests-jasmine/SpecRunner.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +116,8 @@
       <workItem from="1742117136275" duration="10000" />
       <workItem from="1742233846518" duration="2376000" />
       <workItem from="1742240150013" duration="5148000" />
-      <workItem from="1742402241415" duration="5711000" />
+      <workItem from="1742402241415" duration="5852000" />
+      <workItem from="1742416278359" duration="2598000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -252,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742241294890</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add OOP">
+      <option name="closed" value="true" />
+      <created>1742409370774</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1742409370774</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +289,7 @@
     <MESSAGE value="Some features" />
     <MESSAGE value="Add some tests and jasmine" />
     <MESSAGE value="Some tests. However, I have some obstacles, I will fix it later" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some tests. However, I have some obstacles, I will fix it later" />
+    <MESSAGE value="Add OOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add OOP" />
   </component>
 </project>
