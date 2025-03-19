@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Add some tests and jasmine">
-      <change afterPath="$PROJECT_DIR$/tests-jasmine/data/addToCartTest.js" afterDir="false" />
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Some tests. However, I have some obstacles, I will fix it later">
+      <change afterPath="$PROJECT_DIR$/data/cart-oop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-jasmine/checkout/orderSummaryTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/amazon.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/amazon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests-jasmine/SpecRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests-jasmine/SpecRunner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests-jasmine/moneyTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests-jasmine/utils/moneyTest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +62,7 @@
     &quot;Node.js.moneyTest.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/amazon-project&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
@@ -117,7 +121,8 @@
       <workItem from="1741972768303" duration="3149000" />
       <workItem from="1742117136275" duration="10000" />
       <workItem from="1742233846518" duration="2376000" />
-      <workItem from="1742240150013" duration="807000" />
+      <workItem from="1742240150013" duration="5148000" />
+      <workItem from="1742402241415" duration="5711000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -239,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741896819202</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Some tests. However, I have some obstacles, I will fix it later">
+      <option name="closed" value="true" />
+      <created>1742241294890</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1742241294890</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +285,7 @@
     <MESSAGE value="Finished an orderSummary part" />
     <MESSAGE value="Some features" />
     <MESSAGE value="Add some tests and jasmine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add some tests and jasmine" />
+    <MESSAGE value="Some tests. However, I have some obstacles, I will fix it later" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some tests. However, I have some obstacles, I will fix it later" />
   </component>
 </project>

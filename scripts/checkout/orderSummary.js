@@ -5,7 +5,6 @@ import { renderPayment } from './paymentSummary.js';
 import {findProduct} from "../utils/findProduct.js";
 import {updateCheckoutTotal} from "./checkoutHeader.js";
 import {calculateDeliveryDate} from "../utils/calculateDeliveryDate.js";
-import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 
 export function renderOrder() {
     let cartList = '';
@@ -31,7 +30,7 @@ export function renderOrder() {
                       ${temp.name}
                     </div>
                     <div class="product-price">
-                      $${formatCurrency(temp.priceCents)}
+                      ${temp.calculatePrice()}
                     </div>
                     <div class="product-quantity">
                       <span>
