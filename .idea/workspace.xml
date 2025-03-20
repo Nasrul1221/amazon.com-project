@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Add OOP">
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Use overriding and polymorphism. Overall extends OOP">
+      <change afterPath="$PROJECT_DIR$/data/backend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/amazon.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/amazon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,28 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.checkout.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.cart.js.executor&quot;: &quot;Debug&quot;,
-    &quot;Node.js.checkout.js.executor&quot;: &quot;Debug&quot;,
-    &quot;Node.js.moneyTest.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/amazon-project&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.checkout.html.executor": "Run",
+    "Node.js.backend.js.executor": "Run",
+    "Node.js.cart.js.executor": "Debug",
+    "Node.js.checkout.js.executor": "Debug",
+    "Node.js.moneyTest.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/amazon-project",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\amazon-project\tests-jasmine\utils" />
@@ -117,7 +120,8 @@
       <workItem from="1742233846518" duration="2376000" />
       <workItem from="1742240150013" duration="5148000" />
       <workItem from="1742402241415" duration="5852000" />
-      <workItem from="1742416278359" duration="2598000" />
+      <workItem from="1742416278359" duration="4492000" />
+      <workItem from="1742488287866" duration="4934000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -255,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742409370774</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Use overriding and polymorphism. Overall extends OOP">
+      <option name="closed" value="true" />
+      <created>1742419582378</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1742419582378</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +302,7 @@
     <MESSAGE value="Add some tests and jasmine" />
     <MESSAGE value="Some tests. However, I have some obstacles, I will fix it later" />
     <MESSAGE value="Add OOP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add OOP" />
+    <MESSAGE value="Use overriding and polymorphism. Overall extends OOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use overriding and polymorphism. Overall extends OOP" />
   </component>
 </project>
