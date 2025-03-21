@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Use overriding and polymorphism. Overall extends OOP">
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Promises">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +120,7 @@
       <workItem from="1742402241415" duration="5852000" />
       <workItem from="1742416278359" duration="4492000" />
       <workItem from="1742488287866" duration="4934000" />
-      <workItem from="1742553837043" duration="4984000" />
+      <workItem from="1742553837043" duration="6448000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -266,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742419582378</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Promises">
+      <option name="closed" value="true" />
+      <created>1742561335039</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1742561335039</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +310,7 @@
     <MESSAGE value="Some tests. However, I have some obstacles, I will fix it later" />
     <MESSAGE value="Add OOP" />
     <MESSAGE value="Use overriding and polymorphism. Overall extends OOP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use overriding and polymorphism. Overall extends OOP" />
+    <MESSAGE value="Promises" />
+    <option name="LAST_COMMIT_MESSAGE" value="Promises" />
   </component>
 </project>
