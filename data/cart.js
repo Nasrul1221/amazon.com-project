@@ -1,3 +1,5 @@
+import {Clothing, products} from "./products.js";
+
 export let cart;
 
 loadFromStorage();
@@ -79,4 +81,16 @@ export function updateDeliveryOption(productId, deliveryOptionId) {
         }
     })
     saveToLocalStorage();
+}
+
+export function loadCart(fun) {
+    const xhr = new XMLHttpRequest();
+
+    xhr.addEventListener("load", () => {
+        console.log('cart loaded');
+        fun();
+    });
+
+    xhr.open('GET', 'https://supersimplebackend.dev/cart');
+    xhr.send();
 }

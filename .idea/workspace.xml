@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Use overriding and polymorphism. Overall extends OOP">
-      <change afterPath="$PROJECT_DIR$/data/backend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/amazon.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/amazon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +53,7 @@
     "JavaScript Debug.checkout.html.executor": "Run",
     "Node.js.backend.js.executor": "Run",
     "Node.js.cart.js.executor": "Debug",
-    "Node.js.checkout.js.executor": "Debug",
+    "Node.js.checkout.js.executor": "Run",
     "Node.js.moneyTest.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -122,6 +120,7 @@
       <workItem from="1742402241415" duration="5852000" />
       <workItem from="1742416278359" duration="4492000" />
       <workItem from="1742488287866" duration="4934000" />
+      <workItem from="1742553837043" duration="4984000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
