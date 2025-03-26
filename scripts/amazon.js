@@ -1,13 +1,16 @@
 import {cart, addToCart} from '../data/cart.js';
 import {products, loadProducts} from '../data/products.js';
+import {filterProductsPage} from './searchBar.js';
 
 loadProducts(renderProductsGrid);
 
-function renderProductsGrid() {
+export function renderProductsGrid() {
     let productsList = ''
 
+    const filteredProducts = filterProductsPage();
+
     /* Products */
-    products.forEach((product) => {
+    filteredProducts.forEach((product) => {
         productsList += `<div class="product-container">
         <div class="product-image-container">
             <img class="product-image"
@@ -97,5 +100,9 @@ function renderProductsGrid() {
 
             updateCartQuantity();
         })
+    })
+
+    document.querySelector('.search-button').addEventListener('click', () => {
+        window.location.href = "amazon.html?search=" + document.querySelector('.search-bar').value;
     })
 }

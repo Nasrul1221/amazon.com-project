@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/orders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/orders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/seachBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/trackPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/utils/finding.js" afterDir="false" />
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Implement tracking page and some refactoring">
+      <change afterPath="$PROJECT_DIR$/scripts/searchBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/orders.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/checkout/paymentSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout/paymentSummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/utils/findProduct.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/pages/tracking.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/tracking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/amazon.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/amazon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/seachBar.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +132,7 @@
       <workItem from="1742584348706" duration="10494000" />
       <workItem from="1742637050489" duration="1041000" />
       <workItem from="1742826855053" duration="1304000" />
-      <workItem from="1743001263040" duration="9830000" />
+      <workItem from="1743001263040" duration="12750000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -302,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742562667480</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Implement tracking page and some refactoring">
+      <option name="closed" value="true" />
+      <created>1743016679647</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1743016679647</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +340,7 @@
     <MESSAGE value="Use overriding and polymorphism. Overall extends OOP" />
     <MESSAGE value="Promises" />
     <MESSAGE value="Fetch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fetch" />
+    <MESSAGE value="Implement tracking page and some refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement tracking page and some refactoring" />
   </component>
 </project>
