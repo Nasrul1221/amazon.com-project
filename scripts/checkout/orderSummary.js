@@ -2,7 +2,7 @@ import {cart, removeFromCart, updateQuantity, updateDeliveryOption} from '../../
 import {formatCurrency} from "../utils/money.js";
 import { deliveryOptions, findDeliveryId } from '../../data/deliveryOptions.js';
 import { renderPayment } from './paymentSummary.js';
-import {findProduct} from "../utils/findProduct.js";
+import { findProduct } from '../../data/products.js';
 import {updateCheckoutTotal} from "./checkoutHeader.js";
 import {calculateDeliveryDate} from "../utils/calculateDeliveryDate.js";
 

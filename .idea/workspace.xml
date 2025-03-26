@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Promises">
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/orders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/orders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/seachBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/trackPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/utils/finding.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/orders.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout/orderSummary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/checkout/paymentSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkout/paymentSummary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/utils/findProduct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/tracking.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/tracking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +63,13 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.checkout.html.executor": "Run",
+    "Node.js.123.js.executor": "Run",
+    "Node.js.a.js.executor": "Run",
     "Node.js.backend.js.executor": "Run",
     "Node.js.cart.js.executor": "Debug",
     "Node.js.checkout.js.executor": "Run",
     "Node.js.moneyTest.js.executor": "Run",
+    "Node.js.trackPage.js.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -120,7 +135,12 @@
       <workItem from="1742402241415" duration="5852000" />
       <workItem from="1742416278359" duration="4492000" />
       <workItem from="1742488287866" duration="4934000" />
-      <workItem from="1742553837043" duration="6448000" />
+      <workItem from="1742553837043" duration="8177000" />
+      <workItem from="1742568481740" duration="7423000" />
+      <workItem from="1742584348706" duration="10494000" />
+      <workItem from="1742637050489" duration="1041000" />
+      <workItem from="1742826855053" duration="1304000" />
+      <workItem from="1743001263040" duration="9830000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -274,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742561335039</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fetch">
+      <option name="closed" value="true" />
+      <created>1742562667480</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1742562667480</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +339,7 @@
     <MESSAGE value="Add OOP" />
     <MESSAGE value="Use overriding and polymorphism. Overall extends OOP" />
     <MESSAGE value="Promises" />
-    <option name="LAST_COMMIT_MESSAGE" value="Promises" />
+    <MESSAGE value="Fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fetch" />
   </component>
 </project>

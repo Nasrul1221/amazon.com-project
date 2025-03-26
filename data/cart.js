@@ -5,25 +5,10 @@ export let cart;
 loadFromStorage();
 
 export function loadFromStorage() {
-    cart = JSON.parse(localStorage.getItem('cart'));
-
-    if (!cart) {
-        cart = [
-            {
-                productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
-                quantity: 1,
-                deliveryOptionId: '1'
-            },
-            {
-                productId: '58b4fc92-e98c-42aa-8c55-b6b79996769a',
-                quantity: 1,
-                deliveryOptionId: '1'
-            }
-        ]
-    }
+    cart = JSON.parse(localStorage.getItem('cart')) || [];
 }
 
-function saveToLocalStorage() {
+export function saveToLocalStorageCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 
@@ -46,7 +31,7 @@ export function addToCart(productId) {
         });
     }
 
-    saveToLocalStorage();
+    saveToLocalStorageCart();
 }
 
 export function removeFromCart(productId) {
@@ -60,7 +45,7 @@ export function removeFromCart(productId) {
     cart = newCart;
 
 
-    saveToLocalStorage();
+    saveToLocalStorageCart();
 }
 
 export function updateQuantity(productId, newValue) {
@@ -69,7 +54,7 @@ export function updateQuantity(productId, newValue) {
             item.quantity = parseInt(newValue);
         }
     })
-    saveToLocalStorage();
+    saveToLocalStorageCart();
 
     document.querySelector(`.quantity-label-${productId}`).innerHTML = newValue;
 }
@@ -80,17 +65,12 @@ export function updateDeliveryOption(productId, deliveryOptionId) {
             item.deliveryOptionId = deliveryOptionId;
         }
     })
-    saveToLocalStorage();
+    saveToLocalStorageCart();
 }
 
-export function loadCart(fun) {
-    const xhr = new XMLHttpRequest();
-
-    xhr.addEventListener("load", () => {
-        console.log('cart loaded');
-        fun();
+export async function loadCartFetch() {
+    const response = await fetch('https://supersimplebackend.dev/cart').then((response) => {
+        return response;
     });
-
-    xhr.open('GET', 'https://supersimplebackend.dev/cart');
-    xhr.send();
+    const data = await response.text();
 }

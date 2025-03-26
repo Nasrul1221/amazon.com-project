@@ -1,7 +1,19 @@
-import {cart} from '../../data/cart.js';
-import {findProduct} from "../utils/findProduct.js";
+import {cart, saveToLocalStorageCart, removeFromCart} from '../../data/cart.js';
 import {deliveryOptions, findDeliveryId} from "../../data/deliveryOptions.js";
 import {formatCurrency} from "../utils/money.js";
+import {addToOrders, orders} from "../../data/orders.js";
+import {findProduct} from "../../data/products.js";
+import {renderOrder} from "./orderSummary.js";
+
+function updateCartQuantity() {
+    let cartTotal = 0;
+
+    cart.forEach((item) => {
+        cartTotal += item.quantity;
+    })
+
+    document.querySelector('.js-cart-total').innerHTML = cartTotal;
+}
 
 export function renderPayment() {
     let summaryHTML = '';
@@ -51,9 +63,40 @@ export function renderPayment() {
                 <div class="payment-summary-money">$${total}</div>
               </div>
     
-              <button class="place-order-button button-primary">
+              <button class="place-order-button button-primary js-place-order">
                 Place your order
               </button>`
 
     document.querySelector('.js-payment-summary').innerHTML = summaryHTML;
+
+    document.querySelector('.js-place-order').addEventListener('click', async () => {
+        try {
+            const response = await fetch('https://supersimplebackend.dev/orders', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    cart: cart,
+                })
+            })
+
+            const orders = await response.json();
+
+            addToOrders(orders);
+        }
+        catch (error) {
+            console.log(error);
+        }
+
+        cart.forEach((item) => {
+            removeFromCart(item.productId);
+        })
+
+        saveToLocalStorageCart();
+        renderPayment();
+        renderOrder();
+
+        window.location.href='orders.html';
+    });
 }

@@ -1,5 +1,27 @@
 import {formatCurrency} from "../scripts/utils/money.js";
 
+export function findProduct(item) {
+    let temp;
+    products.forEach((product) => {
+        if (item.productId === product.id) {
+            temp = product;
+        }
+    });
+
+    return temp;
+}
+
+export function findProductById(itemId) {
+    let temp;
+    products.forEach((product) => {
+        if (itemId === product.id) {
+            temp = product;
+        }
+    });
+
+    return temp;
+}
+
 class Product {
   id;
   image;
@@ -45,15 +67,13 @@ export class Clothing extends Product {
 export let products = [];
 
 export function loadProductsFetch() {
-    const promise = fetch('https://supersimplebackend.dev/products').then((response) => {
+    return fetch('https://supersimplebackend.dev/products').then((response) => {
         return response.json()
     }).then((productsData) => {
         products = productsData.map((product) => {
             return product.type === 'clothing' ? new Clothing(product) : new Product(product);
         });
-    })
-
-    return promise;
+    });
 }
 
 export function loadProducts(fun) {
