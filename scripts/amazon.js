@@ -106,6 +106,6 @@ export function renderProductsGrid() {
     })
 
     document.querySelector('.search-button').addEventListener('click', () => {
-        window.location.href = "amazon.html?search=" + document.querySelector('.search-bar').value;
+        window.location.href = "index.html?search=" + document.querySelector('.search-bar').value;
     })
 }
