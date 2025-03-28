@@ -1,4 +1,3 @@
-import {renderProductsGrid} from "./amazon.js";
 import {loadProducts, products} from "../data/products.js";
 
 document.querySelector('.search-button').addEventListener('click', () => {

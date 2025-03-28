@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Implement tracking page and some refactoring">
-      <change afterPath="$PROJECT_DIR$/scripts/searchBar.js" afterDir="false" />
+    <list default="true" id="d9bfcc98-13a2-44c7-b5ae-b8d47e2a8d40" name="Changes" comment="Add search functionality and refactor product rendering">
+      <change afterPath="$PROJECT_DIR$/productDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/detailPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/pages/productDetails.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/orders.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/amazon.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/amazon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/seachBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/searchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/searchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/trackPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/trackPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +22,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -38,7 +44,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Nasrul1221/amazon-project.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Nasrul1221/amazon.com-project.git&quot;,
     &quot;accountId&quot;: &quot;f17dfffc-e044-42e8-b363-152be88b115c&quot;
   }
 }</component>
@@ -51,32 +57,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.checkout.html.executor": "Run",
-    "Node.js.123.js.executor": "Run",
-    "Node.js.a.js.executor": "Run",
-    "Node.js.backend.js.executor": "Run",
-    "Node.js.cart.js.executor": "Debug",
-    "Node.js.checkout.js.executor": "Run",
-    "Node.js.moneyTest.js.executor": "Run",
-    "Node.js.trackPage.js.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/amazon-project",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.checkout.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.123.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.a.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.backend.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.cart.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.checkout.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.moneyTest.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.trackPage.js.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/amazon-project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\amazon-project\tests-jasmine\utils" />
@@ -88,7 +94,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
       </set>
     </attachedChunks>
   </component>
@@ -132,7 +138,9 @@
       <workItem from="1742584348706" duration="10494000" />
       <workItem from="1742637050489" duration="1041000" />
       <workItem from="1742826855053" duration="1304000" />
-      <workItem from="1743001263040" duration="12750000" />
+      <workItem from="1743001263040" duration="14236000" />
+      <workItem from="1743077037560" duration="82000" />
+      <workItem from="1743179316753" duration="4683000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -302,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743016679647</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add search functionality and refactor product rendering">
+      <option name="closed" value="true" />
+      <created>1743019634557</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1743019634557</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +329,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -341,6 +369,7 @@
     <MESSAGE value="Promises" />
     <MESSAGE value="Fetch" />
     <MESSAGE value="Implement tracking page and some refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement tracking page and some refactoring" />
+    <MESSAGE value="Add search functionality and refactor product rendering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add search functionality and refactor product rendering" />
   </component>
 </project>

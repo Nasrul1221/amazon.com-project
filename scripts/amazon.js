@@ -48,7 +48,10 @@ export function renderProductsGrid() {
             </select>
         </div>
         
-        ${product.extraInfoHTML()}
+        <div class="products-link-container">
+          ${product.extraInfoHTML()}
+          <a class="product-detail-link" href="productDetails.html?id=${product.id}">More info</a>
+        </div>
 
         <div class="product-spacer"></div>
 

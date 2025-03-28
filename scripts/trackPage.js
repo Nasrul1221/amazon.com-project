@@ -2,9 +2,6 @@ import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js'
 import {findProductById, loadProductsFetch} from "../data/products.js";
 import {findOrder, findProductInOrder} from "./utils/finding.js";
 import {cart} from "../data/cart.js";
-import {orders} from "../data/orders.js";
-
-console.log(orders);
 
 function updateCartQuantity() {
     let cartTotal = 0;
